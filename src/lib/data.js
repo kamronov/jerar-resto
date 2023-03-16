@@ -17,7 +17,7 @@ export const data = [
     },
     {
         id:3,
-        img: 'https://gomart.uz/2572-large_default/sok-bliss-sladkaya-klubnika-1l.jpg',
+        img: 'https://agromir.uz/uploads/categories/bliss-persik-1628860081.png',
         title: 'Bliss sok',
         price: 5,
         have: 25,
@@ -105,7 +105,7 @@ export const data = [
     },
     {
         id:15,
-        img: 'https://test.gomart.uz/272-large_default/ajs-tea-chyornyj-chaj.jpg',
+        img: 'https://m.media-amazon.com/images/I/51qHaa1h4PL.jpg',
         title: 'Ice Tea',
         price: 2,
         have: 39,
@@ -490,7 +490,7 @@ export const data = [
     },
     {
         id:63,
-        img:'https://www.mazalitaom.com/wp-content/uploads/2022/11/Gosht-bilan-buglangan-ruscha-kofte-870x570.jpg',
+        img:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Manti_in_a_steam_cooker.jpg/200px-Manti_in_a_steam_cooker.jpg',
         title:'monti',
         price:0.5,
         have:20,
@@ -506,7 +506,7 @@ export const data = [
     },
     {
         id:65,
-        img:'https://pictures.telegram-store.com/channels/bekalaruchun/38523_2021_12_21_2_video.jpg',
+        img:'https://upload.wikimedia.org/wikipedia/commons/1/11/Qozon_kabob_%28Uzbek_national_cuisine%29.jpg',
         title:'qozon kabob',
         price:5,
         have:5,
@@ -618,7 +618,7 @@ export const data = [
     },
     {
         id:79,
-        img:'https://uzbekistan.travel/storage/app/uploads/public/5eb/ce3/859/thumb_839_1090_490_0_0_crop.jpg',
+        img:'https://saten.uz/oc-content/uploads/14/3356.jpg',
         title:'tandir gosht',
         price: 11,
         have: 50,

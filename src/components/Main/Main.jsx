@@ -13,6 +13,7 @@ data.forEach((item)=>{
 })
 function Main() {
   const [category, setCategory] = useState('Ichimlik')
+  const [tabAct, setTab] = useState(0)
   console.log(category);
   return (
     <div>
@@ -30,15 +31,15 @@ function Main() {
 
         <div className="menu__nav">
           {
-            types && types.map((item)=>(
-              <button key={item} onClick={()=>setCategory(item)}>{item}</button>
+            types && types.map((item, index)=>(
+              <button className={tabAct === index?'btn tab_act': 'btn'} key={item} onClick={()=>{setCategory(item); setTab(index)}}>{item}</button>
             ))
             
           }
         </div>
         <div className="menu__subtitle">
           <h2>Choose Dishes</h2>
-          <button>Dine In</button>
+          <button className='btn_select'>Dine In</button>
         </div>
 
         <ul className="main__list">

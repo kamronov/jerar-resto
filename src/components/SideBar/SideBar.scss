@@ -4,6 +4,8 @@
     border-radius: 16px;
     flex-direction: column;
     background-color:  #1F1D2B;
+    height: 100vh;
+    overflow: auto;
 }
 .side__logo {
     position: relative;
@@ -21,59 +23,83 @@
     }
 }
 .side__list {
-    margin-left: 12px;
-}
-.side__item a{
-    display: block;
-    padding: 18px;
-}
-.side__item--active a{
-    display: block;
-    padding: 18px;
-    background: #EA7C69;
-    box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
-    border-radius: 8px;
+    margin-left: 10px;
 }
 .side__item{
-    margin-top: 22px;
+    margin-top: 20px;
     padding: 13px 24px 13px 12px;
     position: relative;
+    &:hover{
+        background: #252836;
+        border-radius: 12px 0px 0px 12px;
+        &::before{
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            object-fit: cover;
+            background-image: url('../../assets/img/burchak1.png');
+            position: absolute;
+            top: -12px;
+            right: 0px;
+        }
+        &::after{
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            object-fit: cover;
+            background-image: url('../../assets/img/burchak1.png');
+            position: absolute;
+            bottom: -12px;
+            right: 0px;
+            transform: rotate(-90deg);
+        }
+    }
+    
 }
-.side__item:hover{
-    padding: 13px 24px 13px 12px;
-    background: #252836;
-    border-radius: 12px 0px 0px 12px;
+
+.side__icon {
+    display: inline-block;
+    font-size: 22px;
+    color: #EA7C69;
+    padding: 18px;
+    border-radius: 8px;
 }
+
 .side__item--active {
-    padding: 13px 24px 13px 12px;
     background: #252836;
     border-radius: 12px 0px 0px 12px;
+    .side__icon{
+        display: inline-block;
+        background: #EA7C69;
+        box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+        color: #fff;
+    }
+    &::before{
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        object-fit: cover;
+        background-image: url('../../assets/img/burchak1.png');
+        position: absolute;
+        top: -12px;
+        right: 0px;
+    }
+    &::after{
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        object-fit: cover;
+        background-image: url('../../assets/img/burchak1.png');
+        position: absolute;
+        bottom: -12px;
+        right: 0px;
+        transform: rotate(-90deg);
+    }
+    path {
+        fill: #fff;
+    }
 }
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: rgba(64, 56, 107, 0.3);
-  }
-  ::-webkit-scrollbar {
-    width: 6px;
-    height: 3px;
-    background-color: #bd888800;
-    border-radius: 10px;
-  }
-// .side__logo::before {
-//     content: '';
-//     width: 12px;
-//     height: 12px;
-//     position: absolute;
-//     bottom: 0;
-//     right: 0;
-//     background-image: url('../../assets/img/burchak1.png');
-// }
-// .side__item:nth-child(2):after {
-//     content: '';
-//     width: 12px;
-//     height: 12px;
-//     position: absolute;
-//     top: -1.3px;
-//     right: 0;
-//     background-image: url('../../assets/img/burchak2.png');
-// }
