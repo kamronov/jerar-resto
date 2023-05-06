@@ -1,8 +1,11 @@
 .main {
+    display: flex;
+    flex-direction: column;
     background-color: #252836;
-    max-width: 833px;
+    max-width: 848px;
     padding-top: 30px;
     padding-left: 10px;
+    padding-right: 38px;
 }
 
 .main__head {
@@ -141,7 +144,6 @@
 }
 
 .main__list {
-    padding-top: 20px;
     height: 388px;
     display: flex;
     flex-wrap: wrap;

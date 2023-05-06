@@ -1,20 +1,22 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Main.scss'
 import search from '../../assets/img//icons/inp-search.svg'
 import { data } from '../../lib/data'
+import { Context } from '../../Context/Context'
 
 const types = []
 
 data.forEach((item)=>{
   if(types.includes(item.type) !== true){
-
     types.push(item.type)
   }
 })
 function Main() {
+  const {order, setOrder}= useContext(Context)
   const [category, setCategory] = useState('Ichimlik')
   const [tabAct, setTab] = useState(0)
-  console.log(category);
+
+console.log(order);
   return (
     <div>
       <main className='main'>
@@ -45,7 +47,10 @@ function Main() {
         <ul className="main__list">
           {
             data && data.filter((i)=> i.type === category).map((item,index)=>(
-              <li key={index} className='main_items'>
+              <li key={index} onClick={()=>{
+                setOrder([...new Set(order),item])
+                item.count = item.count ? item.count + 1: 1
+              }} className='main_items'>
                 <img src={item.img} alt="" />
                 <b>{item.title}</b>
                 <span>$ {item.price}</span>

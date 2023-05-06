@@ -4,7 +4,6 @@ import SideBar from '../../components/SideBar/SideBar'
 function Discount() {
   return (
     <div>
-         <SideBar/>
     </div>
   )
 }
